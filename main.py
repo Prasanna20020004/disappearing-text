@@ -3,10 +3,10 @@ import tkinter as tk
 
 def set_timer():
     previous_text = text.get()
-    window.after(5000, timer, previous_text)
+    window.after(5000, delete_text, previous_text)
 
 
-def timer(previous_text):
+def delete_text(previous_text):
     current_text = text.get()
 
     if len(previous_text) == len(current_text):
